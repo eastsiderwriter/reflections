@@ -24,6 +24,13 @@ How do the diagrams help you visualize the branch structure?
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	The result is that the head of the merged branches contains the merge of the 
+	two heads of the involved branches. The individual commits of the two branches
+	now appear in one branch in chronological order.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	The pros are that in the many cases where the commits involve different modified sections, 
+	git merge will automatically do the merge correctly. The con is that git lacks high-level
+	intelligence and will force you to decide how to handle merges that involve modifications
+	of the same code section.
